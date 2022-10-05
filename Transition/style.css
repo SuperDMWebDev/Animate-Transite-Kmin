@@ -1,0 +1,83 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #008000;
+  transition: width 2s, height 4s;
+}
+.square:hover {
+  width: 300px;
+  height: 300px;
+}
+.list {
+  list-style: none;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.list li {
+  flex: 1;
+}
+.list li a {
+  text-decoration: none;
+  color: inherit;
+  padding-top: 1rem;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  font-size: 40px;
+}
+.list li a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  font-size: 22px;
+  margin-top: 1rem;
+}
+@media (hover: hover) {
+  .list li a span {
+    transform: translateY(100px);
+    transition: 0.2s;
+  }
+  .list:hover span {
+    transform: translateY(0);
+  }
+  .list li:nth-child(1) span {
+    transition-delay: 0s;
+  }
+  .list li:nth-child(2) span {
+    transition-delay: 0.05s;
+  }
+  .list li:nth-child(3) span {
+    transition-delay: 0.1s;
+  }
+  .list li:nth-child(4) span {
+    transition-delay: 0.15s;
+  }
+  .list li:nth-child(5) span {
+    transition-delay: 0.2s;
+  }
+  .list li:nth-child(6) span {
+    transition-delay: 0.25s;
+  }
+}
+
+.list li:nth-child(1) {
+  background: #90caf9;
+}
+.list li:nth-child(2) {
+  background: #80deea;
+}
+.list li:nth-child(3) {
+  background: #a5d6a7;
+}
+.list li:nth-child(4) {
+  background: #e6ee9c;
+}
+.list li:nth-child(5) {
+  background: #fff176;
+}
+.list li:nth-child(6) {
+  background: #ffd54f;
+}

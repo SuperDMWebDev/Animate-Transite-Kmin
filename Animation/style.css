@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+div.square {
+  width: 200px;
+  height: 200px;
+  background-color: #008000;
+  animation: test 2s linear 1s alternate backwards paused;
+  position: relative;
+}
+@keyframes test {
+  from {
+    background-color: #008000;
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    background-color: red;
+    left: 200px;
+  }
+}
